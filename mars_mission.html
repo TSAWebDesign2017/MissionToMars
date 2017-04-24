@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>A Mission To Mars</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body {
+    background-image: url("space-wallpaper.jpg");
+}
+html {
+  background: URL(space-wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+h1{
+  text-align: center;
+  color: red;
+}
+h1.italic {
+  color: black;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: ;
+  font-style: oblique;
+}
+h2.italic {
+  color: black;
+  text-align: center;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-style: italic;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  width: auto;
+  padding: 10px;
+  //border: 5px solid gray;
+  margin: 0;
+  text-align: justify;
+}
+.image
+{
+    background:URL('spac1.jpg');
+    background-position: center;
+    width:1337px;
+    height:600px;
+    background-repeat:repeat-x;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 0;
+}
+.imu{
+    width: 1320;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+.imu2{
+    width: 1320;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: left;
+}
+.container{
+    padding: 10px;
+}
+.header{
+    width: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #A55D35;
+    text-align: center;
+}
+.container2{
+    padding: 10px;
+}
+li{
+  font-family: "Times New Roman", Times, serif;
+}
+.slider{
+    width: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #A55D35;
+    text-align: center;
+}
+.container3{
+    padding: 10px;
+}
+.inline{
+    display: inline-block;
+    display: inline;
+}
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {
+  display:none;
+  padding: 1px;
+  border: 2px solid black;
+  margin: 0;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: auto;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.caption {
+  color: #f2f2f2;
+  background-color: transparent;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+
+.apanel {
+  color: #f2f2f2;
+  background-color: red;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 670px;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* For Info Tabs ---*/
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+</style>
+</head>
+<body>
+  <div data-role="page" id="pageone">
+    <div class="header">
+      <div class="container2">
+        <h1 class="italic">Mars Missions</h1>
+      </div>
+    </div>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a></li>
+        <li><a href="" class="ui-btn ui-icon-info ui-btn-icon-left">Mars Missions</a></li>
+        <li><a href="" class="ui-btn ui-icon-location ui-btn-icon-left">Space Exploration</a></li>
+        <li><a href="" class="ui-btn ui-icon-location ui-btn-icon-left">Interview</a></li>
+        <li><a href="" class="ui-btn ui-icon-info ui-btn-icon-left">About Us</a></li>
+
+      </ul>
+    </div>
+    <div class="slideshow-container">
+
+    <div class="mySlides fade" id="slide1">
+      <img src="spac1.jpg" style="width:100%">
+      <div class="caption">Welcome To The Mission to Mars! Here we will take you on an exclusive journey into the future of space exploration!</div>
+    </div>
+
+    <div class="mySlides fade" id="slide2">
+      <img src="space-wallpaper.jpg" style="width:100%">
+      <div class="caption">The Age of Private Space Exploration <a href="#" class="ui-btn ui-btn-inline ui-icon-carat-r ui-btn-icon-notext ui-corner-all ui-shadow ui-alt-icon">Black icon</a>
+      </div>
+    </div>
+
+    <div class="mySlides fade" id="slide3">
+      <img src="marsmission.jpg" style="width:100%">
+      <div class="caption">Mars Missions <a href="#" class="ui-btn ui-btn-inline ui-icon-carat-r ui-btn-icon-notext ui-corner-all ui-shadow ui-alt-icon">Black icon</a>
+      </div>
+    </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="one()"></span>
+      <span class="dot" onclick="two()"></span>
+      <span class="dot" onclick="three()"></span>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <div class="imu">
+        <div class="container">
+          <h2 class="italic">NASA's Mars Exploration</h2>
+          <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'Rover')">Mars Rovers</button>
+          <button class="tablinks" onclick="openTab(event, 'Maven')">MAVEN</button>
+        </div>
+
+        <div id="Rover" class="tabcontent">
+          <h3>Mars Exploration</h3>
+          <p>NASA has sent many missions to Mars in order to research its hidden’ scientific secrets including its geology and evidence of possible life.  Among those missions is the Mars Rover missions sent in 2003.  In fact, two rovers were sent in the year 2003.  On June 10 of 2003, the Spirit rover was launched on the Delta II rocket.  In that same year, Spirit's twin, Opportunity was launched on July 7. Both rovers were designed to analyze Mar’s surface and the chemistry of the rocks around.  It was programmed to look for life forms and break rocks down into simpler parts.  These rovers are part of NASA’s long-term Mars Exploration Program to deploy robotic exploration of Mars’ martian surface.  One of the scientific goals the rover missions are trying to accomplish is searching and characterizing a wide range of rocks which can show evidence of water and early life.  The rover technology includes panoramic cameras which determine the mineralogy and the texture of Mars’ terrain, microscopic cameras for close-up, high-resolution images of rocks, and magnets to take samples of magnetic dust on the surface. </p>
+          <br>
+          <a href="" class="ui-btn ui-icon-carat-r ui-btn-icon-right">Read More</a>
+        </div>
+
+        <div id="Maven" class="tabcontent">
+          <h3>MAVEN</h3>
+          <p>NASA’s Mars Atmosphere and Volatile Evolution mission, MAVEN, was launched on November 18, 2013 and it reached Mars on the night of September 21, 2014.  This mission was designed to analyze the Red planet’s surface in order to piece together its past and determine how it may have changed from a wet world into a dry planet.  The 671 million dollar project will investigate Mars’ upper atmosphere, ionosphere and solar winds which allows it to focus on why and how the planet lost most of its atmosphere and liquid water.  Scientists can use the data provided by MAVEN to understand its loss of volatile compounds and give insight into its climate and planetary habitability.</p>
+          <br>
+          <a href="" class="ui-btn ui-icon-carat-r ui-btn-icon-right">Read More</a>
+        </div>
+          <br>
+        </div>
+      </div>
+      <br>
+    <div class="imu">
+      <div class="container">
+        <h2 class="italic">Rockets for Mars</h1>
+        <p>Recently, SpaceX has been working on building heavy-lift and super heavy-lift technology to carry humans and equipment to Mars.  A long-term goal of SpaceX is to create reusable rockets landing safely back on Earth.  SpaceX has been developing powerful chamber engines including the Merlin engine, a powerful single-chamber engine used in the Falcon X and Falcon XX rockets.  The evolution of the merlin engine has brought new powerful engines including the Raptor engine, a methane-fueled engine being implemented in new SpaceX designs.  The raptor engine is a next generation combustion engine with a two stage cycle and it is more efficient than earlier Merlin engines used in the Falcon rockets.  Instead of using liquid oxygen and kerosene as fuel, the Raptor uses oxygen and methane to reduce energy costs and increase efficiency as well as higher thrust.  SpaceX has a vision of creating a large Mars transportation system to transport people and cargo.  The MCT, the Mars Colonial Transporter, is being used as a space transportation and landing system to transport humans and cargo to Mars.  This transporter is essentially a reusable shuttle that has a performance level of carrying 100 tons of cargo to Mars’ surface.
+        </p>
+        <br>
+      </div>
+    </div>
+    <br>
+    <div class="imu">
+      <div class="container">
+        <h2 class="italic">Mars' Conditions</h1>
+        <p>Conditions on Mars are very rough, and there can be many challenges when it comes to staying on Mars for an extended period of time. The biggest challenge with living on Mars is the atmosphere, which is supposed to provide oxygen for organisms to survive and block out harmful rays from the sun. However, the atmosphere of Mars is 200 times thinner than Earth’s atmosphere.  This shows the reason Mars does not have essential compounds including water, nitrogen, and carbon dioxide.  Another obstacle that people would have to face would be the climate of Mars. Powerful dust storms sweep the surface of the planet, which could pose problems for colonization on Mars. Additionally, temperatures on Mars average approximately -50 degrees Celsius. Harmful radiation is yet another problem. While it is not a problem over short periods of time, long-term exposure can lead to some serious health problems.</p>
+        <br>
+        <a href="" class="ui-btn ui-icon-carat-r ui-btn-icon-right">Read More</a>
+        <br>
+    </div>
+  </div>
+  <br>
+  <div class="imu2">
+    <div class="container">
+      <h2 class="italic">The World's Contribution</h1>
+      <p>So far, 2020 is set to be a good year for Mars Exploration for many nations involved in extensive space exploration.  The United States, China, the United Arab Emirates, Europe, and Russia are scheduling to launch missions in the year 2020.  There have been more than 40 missions in the past launched by many countries around the world.  2 missions are currently operating on Mars’ surface and 5 are orbiting Mars.</p>
+      <br>
+      <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'World')">Read More About What's Going On Around the World</button>
+    </div>
+    <div id="World" class="tabcontent">
+      <h3>The United States</h3>
+      <p>The only two working rovers on Mars are owned by NASA and 3 of the 5 orbiters are also owned by NASA.  NASA is working towards developing many smaller missions to land landers in order to conduct scientific research on Mars’ surface.  In 2018, NASA plans to have a smaller mission called the InSight lander.  NASA also plans to launch the next Mars rover worth about 1.9 billion dollars which will leave Earth in 2020.  One of the goals that are intended for the 2020 mission to execute is searching for an ancient Martian life of the surface of Mars.  The new Mars rover is based on the designs of the Curiosity rover.  The nuclear-powered rover will be equipped with a coring drill to take samples of rocks and ancient life.  NASA also hopes to have this mission return back to Earth with all of the samples necessary for research. </p>
+      <br>
+      <h3>Europe</h3>
+      <p>The European space Agency, the ESA will also conduct space exploration on Mars.  Their mission, ExoMars Phase 2 will include a rover which will conduct exobiology and geochemistry research on the surface of Mars.  the rover will also include a Russian surface platform to conduct climate and atmospheric investigations.</p>
+      <br>
+      <h3>India</h3>
+      <p>The Indian Space Research Organization launched the Mars Orbiter Mission, the MOM, on November 5, 2013.  This mission is designed to observe surface features including morphology and mineralogy, and it will also be conducting atmospheric tests.  The orbiter will search for the existence of Methane in the atmosphere which will conclude the existence of martian life at one point.</p>
+      <br>
+      <h3>China</h3>
+      <p>Recently, China says that it hopes to send its first successful mission to mars.  Many of its missions to mars were failures in the past, however, the Chinese space Program now says that it has all that it needs to send a mission to the red planet.  Its mission includes two parts, a mars rover, and an orbiter to analyze atmospheric conditions.</p>
+      <a href="" class="ui-btn ui-icon-carat-r ui-btn-icon-right">Read More</a>
+    </div>
+      <br>
+    </div>
+  </div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 10000); // Change image every 2 seconds
+}
+function openTab(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+</body>
+</html>
