@@ -9,6 +9,10 @@
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 <meta charset="utf-8">
 <style>
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body {
+    background-image: url("space-wallpaper.jpg");
+}
 html {
   background: URL(space-wallpaper.jpg);
   background-repeat: no-repeat;
@@ -20,14 +24,14 @@ h1{
   color: red;
 }
 h1.italic {
-  color: red;
+  color: black;
   text-align: center;
-  font-family: 'Palanquin Dark', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: ;
   font-style: oblique;
 }
 h2.italic {
-  color: blue;
+  color: black;
   text-align: center;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-style: italic;
@@ -65,16 +69,28 @@ p {
 .container{
     padding: 10px;
 }
+.header{
+    width: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #A55D35;
+    text-align: center;
+}
+.container2{
+    padding: 10px;
+}
 li{
   font-family: "Times New Roman", Times, serif;
 }
+
 </style>
 </head>
 <body>
   <div data-role="page" id="pageone">
-    <div data-role="header">
+    <div class="header">
+      <div class="container2">
         <h1 class="italic">The Mission to Mars!</h1>
         <h2 class="italic">It's Just the Beginning!</h2>
+      </div>
     </div>
     <div data-role="navbar">
       <ul>

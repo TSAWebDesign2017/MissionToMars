@@ -69,10 +69,19 @@ p {
 .container{
     padding: 10px;
 }
+.imu3{
+    width: 1320px;
+    height: 730px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: left;
+}
+.container3{
+    padding: 10px;
+}
 .header{
     width: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: #A55D35;
+    background-color: #DE8E21;
     text-align: center;
 }
 .container2{
@@ -229,13 +238,26 @@ div.tab button.active {
     from {opacity: 0;}
     to {opacity: 1;}
 }
+.logo-container {
+  float: left;
+  width: 150px;
+  height: 150px;
+  position: left;
+  margin: auto;
+}
 </style>
 </head>
 <body>
   <div data-role="page" id="pageone">
     <div class="header">
       <div class="container2">
-        <h1 class="italic">Mars Missions</h1>
+        <div class="logo">
+        </div>
+        <div class="logo-container">
+          <img src="MTMLogo.png" style="width:100%" />
+        </div>
+        <h1 class="italic">The Mission to Mars!</h1>
+        <h2 class="italic">It's Just the Beginning!</h2>
       </div>
     </div>
     <div data-role="navbar">
@@ -251,19 +273,19 @@ div.tab button.active {
     <div class="slideshow-container">
 
     <div class="mySlides fade" id="slide1">
-      <img src="spac1.jpg" style="width:100%">
-      <div class="caption">Welcome To The Mission to Mars! Here we will take you on an exclusive journey into the future of space exploration!</div>
+      <img src="spacex-mars.jpg" style="width:100%">
+      <div class="caption">SpaceX is working to create advanced rockets to further planetary space exploration</div>
     </div>
 
     <div class="mySlides fade" id="slide2">
-      <img src="space-wallpaper.jpg" style="width:100%">
-      <div class="caption">The Age of Private Space Exploration <a href="#" class="ui-btn ui-btn-inline ui-icon-carat-r ui-btn-icon-notext ui-corner-all ui-shadow ui-alt-icon">Black icon</a>
+      <img src="apollo11.jpg" style="width:100%">
+      <div class="caption">In 1969, NASA lands a man on the Moon
       </div>
     </div>
 
     <div class="mySlides fade" id="slide3">
-      <img src="marsmission.jpg" style="width:100%">
-      <div class="caption">Mars Missions <a href="#" class="ui-btn ui-btn-inline ui-icon-carat-r ui-btn-icon-notext ui-corner-all ui-shadow ui-alt-icon">Black icon</a>
+      <img src="explorer.jpg" style="width:100%">
+      <div class="caption">Explorer 1 is the first unmanned mission
       </div>
     </div>
 
@@ -290,7 +312,7 @@ div.tab button.active {
           <h3>SpaceX</h3>
           <p>SpaceX designs, manufactures and launches advanced rockets and spacecraft that are mainly reusable. The company was founded in 2002 to revolutionize space exploration and technology, with a goal of enabling people to live on other planets.  SpaceX employs many different rockets such as its Falcon 9 and Dragon rockets to go to the International Space Station. SpaceX plans to send a privately crewed Dragon spacecraft beyond the Moon next year.  Now, through detailed research, SpaceX plans to unveil its newest future mission, a mission to mars.</p>
           <br>
-          <a href="" class="ui-btn ui-icon-carat-r ui-btn-icon-right">Read More</a>
+          <!--<a href="" class="ui-btn ui-icon-carat-r ui-btn-icon-right">Read More</a>-->
         </div>
 
         <div id="virgin" class="tabcontent">
@@ -304,7 +326,7 @@ div.tab button.active {
           <h3>Boeing</h3>
           <p>Even though the well-known company Boeing is mostly known for making its groundbreaking airplanes, they are also advancing in quite a few fields of space exploration. In fact, near the beginning of April in 2017, Boeing announced its partnership with NASA for attempting to land a man on Mars. With a combination of NASA and Boeing’s money and research time, it may be easy to believe that they will be able to land a man on Mars in the next ten years. But, they are not going to be attempting to land on just Mars, but anywhere from the Earth’s moon to Mars. So, this means that Mars will most likely be an extreme goal that NASA and Boeing will be reaching for.</p>
           <br>
-          <a href="" class="ui-btn ui-icon-carat-r ui-btn-icon-right">Read More</a>
+          <!--<a href="" class="ui-btn ui-icon-carat-r ui-btn-icon-right">Read More</a>-->
         </div>
           <br>
         </div>
@@ -312,7 +334,7 @@ div.tab button.active {
       <br>
     <div class="imu">
       <div class="container">
-        <h2 class="italic">Space facilities Around America</h1>
+        <h2 class="italic">NASA Space Facilities Around America</h1>
         <p>In the USA, there are more than ten facilities. Some of these facilities include the Independent Verification and Validation Facility in West Virginia, the Wallops Flight Facility in Virginia, and the White Sands Test Facility in New Mexico. The NASA Headquarters are located in Washington D.C. Some of the facilities serve as research centers, where research and testing are done. Also, there are test facilities where tests are performed, as well as Shared Service Centers which is where other services, like corporations NASA has partnerships with, will help NASA on projects. But, with service centers, this is on a much larger scale with many public and private companies. Each facility has its own purpose, and NASA needs all of the facilities for much to be done.
         </p>
         <br>
@@ -321,36 +343,32 @@ div.tab button.active {
     <br>
     <div class="imu">
       <div class="container">
-        <h2 class="italic">Mars' Conditions</h1>
-        <p>Conditions on Mars are very rough, and there can be many challenges when it comes to staying on Mars for an extended period of time. The biggest challenge with living on Mars is the atmosphere, which is supposed to provide oxygen for organisms to survive and block out harmful rays from the sun. However, the atmosphere of Mars is 200 times thinner than Earth’s atmosphere.  This shows the reason Mars does not have essential compounds including water, nitrogen, and carbon dioxide.  Another obstacle that people would have to face would be the climate of Mars. Powerful dust storms sweep the surface of the planet, which could pose problems for colonization on Mars. Additionally, temperatures on Mars average approximately -50 degrees Celsius. Harmful radiation is yet another problem. While it is not a problem over short periods of time, long-term exposure can lead to some serious health problems.</p>
-        <br>
-        <a href="" class="ui-btn ui-icon-carat-r ui-btn-icon-right">Read More</a>
+        <h2 class="italic">The Evolution of Space Vehicles</h1>
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'manned')">Evolution of Manned Missions</button>
+          <button class="tablinks" onclick="openTab(event, 'unmanned')">Evolution of Unmanned Missions</button>
+        </div>
+
+        <div id="manned" class="tabcontent">
+          <h3>Evolution of Manned Missions</h3>
+          <p>Manned space missions were the core of space exploration. Although the oldest and most current space missions were/are mostly unmanned, the most popular and important missions were manned. Manned missions have evolved over time from the Mercury mission in 1958 using the Atlas rocket to the SpaceX rockets today using many of the Falcon and Dragon rocket capsules with single chamber combustion engines.  Examples of rockets/programs involved in this rapid evolution include the Apollo programs and the Space Shuttle Programs. The Apollo program was the mission to the Moon, and was completed in late 1972.  It made history in 1962 when Apollo 11 landed on the moon with Neil Armstrong and Buzz Aldrin. The next program, the most valuable and expensive human artifact ever, the International Space Station, is a manned mission where humans aboard stay at the Station for years and carry out experiments, including the effect of exposure to space on a human body.</p>
+          <br>
+        </div>
+
+        <div id="unmanned" class="tabcontent">
+          <h3>Evolution of Unmanned</h3>
+          <p>NASA and other private companies have sent over 1000 unmanned missions into space, since the first unmanned mission in 1958 called Explorer 1. Unmanned missions have evolved over the years starting with the Explorer 1 and Pioneer 10 missions designed for planetary exploration all the way to the Mars Global Surveyor Orbiter and many of SpaceX’s unmanned rockets.  Unmanned missions mean that there is no control from people on the spacecraft, and it is being controlled remotely. Some types of these unmanned missions include satellites and rovers. An example of a famous unmanned rover is the Curiosity rover. This is an extension of the Mars Pathfinder program. The Curiosity rover looked for past and present life on Mars.</p>
+          <br>
+          <!--<a href="" class="ui-btn ui-icon-carat-r ui-btn-icon-right">Read More</a>-->
+        </div>
         <br>
     </div>
   </div>
   <br>
-  <div class="imu2">
-    <div class="container">
-      <h2 class="italic">The World's Contribution</h1>
-      <p>So far, 2020 is set to be a good year for Mars Exploration for many nations involved in extensive space exploration.  The United States, China, the United Arab Emirates, Europe, and Russia are scheduling to launch missions in the year 2020.  There have been more than 40 missions in the past launched by many countries around the world.  2 missions are currently operating on Mars’ surface and 5 are orbiting Mars.</p>
-      <br>
-      <div class="tab">
-      <button class="tablinks" onclick="openTab(event, 'World')">Read More About What's Going On Around the World</button>
-    </div>
-    <div id="World" class="tabcontent">
-      <h3>The United States</h3>
-      <p>The only two working rovers on Mars are owned by NASA and 3 of the 5 orbiters are also owned by NASA.  NASA is working towards developing many smaller missions to land landers in order to conduct scientific research on Mars’ surface.  In 2018, NASA plans to have a smaller mission called the InSight lander.  NASA also plans to launch the next Mars rover worth about 1.9 billion dollars which will leave Earth in 2020.  One of the goals that are intended for the 2020 mission to execute is searching for an ancient Martian life of the surface of Mars.  The new Mars rover is based on the designs of the Curiosity rover.  The nuclear-powered rover will be equipped with a coring drill to take samples of rocks and ancient life.  NASA also hopes to have this mission return back to Earth with all of the samples necessary for research. </p>
-      <br>
-      <h3>Europe</h3>
-      <p>The European space Agency, the ESA will also conduct space exploration on Mars.  Their mission, ExoMars Phase 2 will include a rover which will conduct exobiology and geochemistry research on the surface of Mars.  the rover will also include a Russian surface platform to conduct climate and atmospheric investigations.</p>
-      <br>
-      <h3>India</h3>
-      <p>The Indian Space Research Organization launched the Mars Orbiter Mission, the MOM, on November 5, 2013.  This mission is designed to observe surface features including morphology and mineralogy, and it will also be conducting atmospheric tests.  The orbiter will search for the existence of Methane in the atmosphere which will conclude the existence of martian life at one point.</p>
-      <br>
-      <h3>China</h3>
-      <p>Recently, China says that it hopes to send its first successful mission to mars.  Many of its missions to mars were failures in the past, however, the Chinese space Program now says that it has all that it needs to send a mission to the red planet.  Its mission includes two parts, a mars rover, and an orbiter to analyze atmospheric conditions.</p>
-      <a href="" class="ui-btn ui-icon-carat-r ui-btn-icon-right">Read More</a>
-    </div>
+  <div class="imu3">
+    <div class="container3">
+      <h2 class="italic">Mission to Mars Timeline</h1>
+      <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1swG8G1bFvYLBBgHpfED-w07H5l-x4DRFFEZMRgUclgo&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
       <br>
     </div>
   </div>
